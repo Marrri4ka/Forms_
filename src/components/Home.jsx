@@ -1,6 +1,10 @@
 import React from 'react';
+import {  Link } from 'react-router-dom'
 
-function Home(){
+
+class Home extends React.Component{
+
+  constructor()
   return(
     <div><nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
@@ -14,7 +18,7 @@ function Home(){
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+       <Link to ='/newpost'> <a class="nav-link" href="#">New Post</a></Link>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
