@@ -3,6 +3,10 @@ import {  Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
+
+
+
+
 class Home extends React.Component{
   constructor(props){
     super(props);
@@ -20,7 +24,7 @@ class Home extends React.Component{
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <Link to='/test'><a class="nav-link" href="#">Test <span class="sr-only">(current)</span></a></Link>
       </li>
       <li class="nav-item">
        <Link to ='/newpost'> <a class="nav-link" href="#">New Post</a></Link>

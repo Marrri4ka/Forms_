@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
+
+
 class NewPost extends React.Component {
 
     state = {
@@ -29,6 +32,7 @@ class NewPost extends React.Component {
     _message = null;
     render(){
         return (
+            
             <form onSubmit={this.handleSubmit}>
                <label htmlFor="">New POst</label>
             <input

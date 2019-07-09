@@ -3,7 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
 import NewPost from './components/NewPost';
-import {  Route } from 'react-router-dom'
+import {  Route } from 'react-router-dom';
+import Test from './components/Test';
+
+
+
 
 
 
@@ -39,6 +43,7 @@ class App extends React.Component {
         <NewPost onNewCreation={this.onNewCreation} />}/>
       <Route path="/" render={()=>
         <Home allmessages={this.state.filteredMessages} onSearch={this.onSearch}/>}/>
+        <Route path='/test' component={Test}/>
 
 
     </div>
